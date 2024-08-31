@@ -39,7 +39,7 @@ const ImageGallery = () => {
     const showPreviousImage = (e) => {
         e.stopPropagation();
         // setSelectedIndex((selectedIndex - 1 + imgUrls.length) % imgUrls.length);
-        selectedIndex((prevIndex) =>
+        setSelectedIndex((prevIndex) =>
             prevIndex > 0 ? prevIndex - 1 : imgUrls.length - 1
         );
     };
@@ -47,7 +47,7 @@ const ImageGallery = () => {
     const showNextImage = (e) => {
         e.stopPropagation();
         // setSelectedIndex((selectedIndex + 1) % imgUrls.length);
-        selectedIndex((prevIndex) =>
+        setSelectedIndex((prevIndex) =>
             prevIndex < imgUrls.length - 1 ? prevIndex + 1 : 0
         );
     };
