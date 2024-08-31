@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Bento from '../assets/img/crew/Bento.png';
+import Bento from '../assets/img/crew/bento.png';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
