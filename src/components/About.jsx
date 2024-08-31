@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import MaxWidthWrapper from './MaxWidthWrapper';
-import Logo_A2W from '../assets/img/Logo_A2W.png';
+import Logo_A2W from '../assets/img/logo_a2w.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
