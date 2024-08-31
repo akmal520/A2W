@@ -22,6 +22,7 @@ const imgUrls = [
 
 const ImageGallery = () => {
     const [selectedIndex, setSelectedIndex] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         Aos.init();
@@ -30,10 +31,12 @@ const ImageGallery = () => {
 
     const openModal = (index) => {
         setSelectedIndex(index);
+        setIsModalOpen(true);
     };
 
     const closeModal = () => {
         setSelectedIndex(null);
+        setIsModalOpen(false);
     };
 
     const showPreviousImage = (e) => {
@@ -51,6 +54,18 @@ const ImageGallery = () => {
             prevIndex < imgUrls.length - 1 ? prevIndex + 1 : 0
         );
     };
+
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isModalOpen]);
 
     return (
         <div>
