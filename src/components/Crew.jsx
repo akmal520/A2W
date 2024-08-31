@@ -3,7 +3,7 @@ import MaxWidthWrapper from './MaxWidthWrapper';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import Bento from '../assets/img/crew/Bento.png';
+import Bento from '../assets/img/crew/bento.png';
 
 const imgUrls = [
     Bento,
