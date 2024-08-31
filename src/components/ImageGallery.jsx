@@ -61,7 +61,7 @@ const ImageGallery = () => {
                         data-aos="zoom-in"
                         data-aos-duration="1000"
                         data-aos-delay={index * 100}
-                        data-aos-offset="300"
+                        data-aos-offset="250"
                     >
                         <img
                             src={url}
