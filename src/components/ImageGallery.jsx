@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import Bento from '../assets/img/crew/bento.png';
+import A2W_1 from '../assets/img/a2w_1.png';
+import A2W_2 from '../assets/img/a2w_2.png';
+import A2W_3 from '../assets/img/a2w_3.png';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const imgUrls = [
     Bento,
+    A2W_1,
+    A2W_2,
+    A2W_3,
     Bento,
+    A2W_1,
+    A2W_2,
+    A2W_3,
     Bento,
-    Bento,
-    Bento,
-    Bento,
-    Bento,
-    Bento,
-    Bento,
-    Bento,
+    A2W_1,
 ];
 
 const ImageGallery = () => {
